@@ -1,0 +1,88 @@
+/* Mengatur box-sizing dan latar belakang dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur gaya latar belakang */
+body {
+    background: linear-gradient(135deg, #0565f4 0%, #0d0d0e 100%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Mengatur gaya header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 16px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur gaya form */
+form {
+    background: #b9b6b6;
+    padding: 10px; /* Memperbesar padding untuk ruang lebih dekat */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 500px;
+    margin-top: 20px; /* Menambah jarak dari header */
+}
+
+/* Mengatur label */
+label {
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-bottom: none; /* Mengurangi jarak margin-bottom */
+}
+
+/* Mengatur input, textarea, dan select */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 30px); /* Memperkecil lebar input untuk membuat lebih dekat */
+    padding: 6px; /* Memperkecil padding pada input */
+    margin-bottom: 8px; /* Mengurangi jarak margin-bottom */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px; /* Memperkecil ukuran font untuk kesan lebih ringkas */
+    color: #333;
+}
+
+/* Mengatur gaya tombol */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}

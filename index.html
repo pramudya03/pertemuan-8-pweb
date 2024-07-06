@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="hasil.php">
+    <title>PERTEMUAN 8</title>
+</head>
+<body>
+    <h2>Form Data Diri</h2>
+    <form action="hasil.php" method="POST">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="nim">Nim:</label><br>
+        <input type="textarea" id="nim" name="nim" required><br><br>
+
+        <label for="usia">Usia:</label><br>
+        <input type="number" id="usia" name="usia" required><br><br>
+
+        <label for="lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="lahir" name="lahir" required><br><br>
+
+        <label for="jk">Jenis Kelamin:</label><br>
+        <input type="radio" name="jk" > laki - laki 
+        <input type="radio" name="jk" > perempuan
+        <br><br>
+
+        <label for="hobi">Hobi:</label><br>
+        <select>
+            <option>Sepak Bola</option>
+            <option>Bsaket</option>
+            <option>Mancing</option>
+            <option>Maraton</option>
+            <option>Nonton</option>
+        </select><br><br>
+
+        <label for="agama">Agama :</label><br>
+        <input type="text" id="agama" name="agama" required><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+
+
+        <input type="submit" value="simpan">
+        <input type="reset" value="reset">
+
+    </form>
+
+</body>
+</html>
